@@ -1,0 +1,597 @@
+
+> arclabs@0.1.0 start
+> react-scripts start
+
+Starting the development server...
+
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\data\arcLabsKnowledge.js
+  Line 262:7:  'listNames' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\data\arcLabsKnowledge.js
+  Line 262:7:  'listNames' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\data\arcLabsKnowledge.js
+  Line 262:7:  'listNames' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\data\arcLabsKnowledge.js
+  Line 262:7:  'listNames' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ArcLabsChatBot.jsx
+  Line 157:17:  The ref value 'timersRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'timersRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 445:7:   'INDUSTRY_SECTORS' is assigned a value but never used  no-unused-vars
+  Line 578:10:  'InsightDetailPanel' is defined but never used         no-unused-vars
+  Line 691:10:  'activeTrust' is assigned a value but never used       no-unused-vars
+  Line 691:23:  'setActiveTrust' is assigned a value but never used    no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 445:7:   'INDUSTRY_SECTORS' is assigned a value but never used  no-unused-vars
+  Line 578:10:  'InsightDetailPanel' is defined but never used         no-unused-vars
+  Line 691:10:  'activeTrust' is assigned a value but never used       no-unused-vars
+  Line 691:23:  'setActiveTrust' is assigned a value but never used    no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 578:10:  'InsightDetailPanel' is defined but never used           no-unused-vars
+  Line 691:23:  'setActiveTrust' is assigned a value but never used      no-unused-vars
+  Line 921:9:   'activeTrustItem' is assigned a value but never used     no-unused-vars
+  Line 923:9:   'activeIndustryItem' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 578:10:  'InsightDetailPanel' is defined but never used           no-unused-vars
+  Line 691:23:  'setActiveTrust' is assigned a value but never used      no-unused-vars
+  Line 921:9:   'activeTrustItem' is assigned a value but never used     no-unused-vars
+  Line 923:9:   'activeIndustryItem' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 923:9:  'activeIndustryItem' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+src\pages\IndustrialIoTSolutions.jsx
+  Line 923:9:  'activeIndustryItem' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\pages\Home.jsx
+Syntax error: Unexpected token (773:4) (773:4)
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/pages/Home.jsx[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\src\pages\Home.jsx: Unexpected token (773:4)
+
+[0m [90m 771 |[39m     [33m<[39m[33m/[39m[33m>[39m
+ [90m 772 |[39m   )[33m;[39m
+[31m[1m>[22m[39m[90m 773 |[39m }s [33m/[39m[33m>[39m
+ [90m     |[39m     [31m[1m^[22m[39m
+ [90m 774 |[39m       [33m<[39m[33mCSR[39m [33m/[39m[33m>[39m
+ [90m 775 |[39m       [33m<[39m[33mTestimonials[39m [33m/[39m[33m>[39m
+ [90m 776 |[39m       [33m<[39m[33mHomeFAQ[39m [33m/[39m[33m>[39m[0m
+    at constructor (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:365:19)
+    at FlowParserMixin.raise (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:6616:19)
+    at FlowParserMixin.unexpected (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:6636:16)
+    at FlowParserMixin.parseExprAtom (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:11459:22)
+    at FlowParserMixin.parseExprAtom (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOpBaseRightExpr (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:11003:34)
+    at FlowParserMixin.parseExprOpRightExpr (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10998:21)
+    at FlowParserMixin.parseExprOp (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10964:27)
+    at FlowParserMixin.parseExprOps (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10925:17)
+    at FlowParserMixin.parseMaybeConditional (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:3561:18)
+    at FlowParserMixin.parseExpressionBase (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10801:23)
+    at C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10797:39
+    at FlowParserMixin.allowInAnd (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12438:16)
+    at FlowParserMixin.parseExpression (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:10797:17)
+    at FlowParserMixin.parseStatementContent (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12912:23)
+    at FlowParserMixin.parseStatementLike (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12784:17)
+    at FlowParserMixin.parseStatementLike (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:2930:24)
+    at FlowParserMixin.parseModuleItem (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12761:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:13333:36)
+    at FlowParserMixin.parseBlockBody (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:13326:10)
+    at FlowParserMixin.parseProgram (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12639:10)
+    at FlowParserMixin.parseTopLevel (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:12629:25)
+    at FlowParserMixin.parseTopLevel (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:3697:28)
+    at FlowParserMixin.parse (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:14505:25)
+    at parse (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\parser\lib\index.js:14539:38)
+    at parser (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\core\lib\parser\index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+    at normalizeFile.next (<anonymous>)
+    at run (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\core\lib\transformation\index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (C:\browser download\Website update\Arc-labs-website-updates\node_modules\@babel\core\lib\transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (C:\browser download\Website update\Arc-labs-website-updates\node_modules\gensync\index.js:261:32)
+    at C:\browser download\Website update\Arc-labs-website-updates\node_modules\gensync\index.js:273:13
+    at async.call.result.err.err (C:\browser download\Website update\Arc-labs-website-updates\node_modules\gensync\index.js:223:11)
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\pages\Home.jsx
+  Line 773:4:  Parsing [1m[31merror[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (773:4)
+
+[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m and [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m

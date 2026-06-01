@@ -1,0 +1,158 @@
+rules_version = '2';
+
+// ============================================================================
+// ARC LABS — Firestore Security Rules (PROPOSED / CORRECTED)
+//
+// WHY THIS FILE EXISTS
+//   Your current firestore.rules only matches: certificates, orders, invoices,
+//   counters. In rules_version 2, ANY path not explicitly matched is DENIED.
+//   Your client forms write to collections that have NO matching rule:
+//       - custom_proposals      (LabPackages.jsx)
+//       - programCurriculumLeads (Programs.jsx)
+//       - <CSR collection>       (CSRPartners.jsx  — CONFIRM NAME, see below)
+//   => Those writes are REJECTED in production. You are losing leads.
+//
+//   Also: certificates had `allow create: if true` => anyone can forge a
+//   certificate that passes your /verify page. Closed below.
+//
+// LEGEND
+//   [MANDATORY]   security/lead-capture correctness — do not ship without it
+//   [OPTIONAL]    hardening you can phase in
+//   [DANGEROUS]   patterns to avoid; explained inline
+//
+// MODEL USED HERE
+//   - Public, anonymous visitors submit lead forms (no auth on your site today).
+//     So we ALLOW create from anyone, but VALIDATE strictly to limit abuse.
+//   - Nobody can read, update, or delete leads from the client. You read them
+//     in the Firebase console or via Admin SDK (Cloud Functions), which bypass
+//     these rules entirely.
+//   - Money objects (orders/invoices/counters) stay server-side only.
+// ============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---- Shared validation helpers ---------------------------------------
+
+    // True when a value is a present, non-empty, length-bounded string.
+    function str(v, maxLen) {
+      return v is string && v.size() > 0 && v.size() <= maxLen;
+    }
+
+    // Optional string: absent OR a length-bounded string (may be empty).
+    function optStr(data, field, maxLen) {
+      return !(field in data) || (data[field] is string && data[field].size() <= maxLen);
+    }
+
+    // Caps the total number of fields so nobody can stuff huge documents.
+    function maxFields(data, n) {
+      return data.keys().size() <= n;
+    }
+
+    // A generic, abuse-resistant "lead" document validator.
+    // Requires name + (phone or email), bounds every common field, and caps
+    // document field count. Tune field names to match your forms exactly.
+    function validLead(data) {
+      return maxFields(data, 25)
+        && str(data.name, 120)
+        && (str(data.phone, 20) || str(data.email, 254))
+        && optStr(data, 'email', 254)
+        && optStr(data, 'phone', 20)
+        && optStr(data, 'org', 200)
+        && optStr(data, 'organization', 200)
+        && optStr(data, 'role', 120)
+        && optStr(data, 'city', 120)
+        && optStr(data, 'message', 4000)
+        // createdAt may be a client string or a server timestamp; allow both,
+        // but if present it must be one of those types (not an object/array).
+        && (!('createdAt' in data)
+              || data.createdAt is string
+              || data.createdAt is timestamp);
+    }
+
+    // ---- LEAD COLLECTIONS (client create, validated; no client read) -----
+
+    // [MANDATORY] Lab package custom proposals — written by LabPackages.jsx
+    match /custom_proposals/{id} {
+      allow create: if validLead(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // [MANDATORY] Program curriculum download leads — written by Programs.jsx
+    // (this is also what triggers your programCurriculumLeadEmail Cloud Function)
+    match /programCurriculumLeads/{id} {
+      allow create: if validLead(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // [MANDATORY — CONFIRM COLLECTION NAME]
+    // CSRPartners.jsx submits a lead form. I could not re-read the exact
+    // collection name in this session. Open src/pages/CSRPartners.jsx, find the
+    // `addDoc(collection(db, "____"), ...)` (or emailjs-only) line:
+    //   * If it writes to Firestore, replace the name below and keep this block.
+    //   * If it ONLY uses emailjs (no Firestore write), delete this block.
+    match /csr_inquiries/{id} {
+      allow create: if validLead(request.resource.data);
+      allow read, update, delete: if false;
+    }
+
+    // ---- CERTIFICATES ----------------------------------------------------
+
+    // [MANDATORY] Public verification needs read. Creation must NOT be open.
+    //
+    // RECOMMENDED (most secure): create certificates ONLY from a Cloud Function
+    // using the Admin SDK (which bypasses these rules). Keep client create = false.
+    match /certificates/{certId} {
+      allow read: if true;                 // /verify page reads this
+      allow create, update, delete: if false;  // server-side (Admin SDK) only
+    }
+    //
+    // [DANGEROUS] Your old rule was:  allow create: if true;
+    //   => anyone with your public Firebase web config (which ships in every
+    //      client bundle) can script unlimited forged certificates that pass
+    //      /verify. Never restore this.
+    //
+    // [OPTIONAL interim] If you MUST issue certs client-side until the Cloud
+    // Function exists, replace the certificates block above with a VALIDATED
+    // create (still weaker than server-side — a determined attacker can mimic
+    // the shape, so treat as temporary):
+    //
+    //   match /certificates/{certId} {
+    //     allow read: if true;
+    //     allow create: if request.resource.data.keys().size() <= 15
+    //                   && (certId is string && certId.size() >= 6 && certId.size() <= 40)
+    //                   && str(request.resource.data.name, 120)
+    //                   && str(request.resource.data.course, 200)
+    //                   && (request.resource.data.issuedAt is string
+    //                       || request.resource.data.issuedAt is timestamp);
+    //     allow update, delete: if false;
+    //   }
+
+    // ---- MONEY OBJECTS (server-side only) --------------------------------
+
+    // [MANDATORY] Orders, invoices, counters must be written by Cloud Functions
+    // via the Admin SDK (Razorpay webhook -> orders/invoices; counters for
+    // sequential invoice numbering). The Admin SDK bypasses these rules, so
+    // `false` here is correct AND secure.
+    //
+    // [DANGEROUS] Checkout.jsx currently does addDoc(collection(db,"orders"),...)
+    // from the browser. With the rule below that client write FAILS (correct),
+    // but it also means your checkout depends on the client write succeeding.
+    // FIX IN CODE: stop writing orders from the client. Create the order in the
+    // Razorpay `payment.captured` webhook (functions/index.js) instead, so an
+    // order only exists after money is actually captured. Client-created orders
+    // are spoofable (fake amounts, fake "paid" flags) and must not be trusted.
+    match /orders/{orderId}   { allow read, write: if false; }
+    match /invoices/{invoiceId} { allow read, write: if false; }
+    match /counters/{counterId} { allow read, write: if false; }
+
+    // ---- DEFAULT DENY ----------------------------------------------------
+
+    // [MANDATORY] Explicit catch-all. Anything not matched above is denied.
+    // (Already the default in v2, but stating it prevents accidental exposure
+    // if someone adds a broad match later.)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
