@@ -6,6 +6,9 @@ node_modules
 build
 dist
 .DS_Store
+<<<<<<< HEAD
 
 .vercel
 .env*.local
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2

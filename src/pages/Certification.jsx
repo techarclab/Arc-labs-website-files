@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useState } from "react";
+=======
+import { useState, useEffect } from "react";
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 import { Helmet } from "react-helmet-async";
 import "../styles/Certification.css";
 import VerifyPanel from "../components/VerifyPanel";
@@ -6,8 +10,18 @@ import RegisterPanel from "../components/RegisterPanel";
 
 export default function CertificationPage() {
   const [tab, setTab] = useState("verify");
+<<<<<<< HEAD
 
   const handleVerified = () => {};
+=======
+  const [recentlyVerified, setRecentlyVerified] = useState([]);
+
+  const handleVerified = (cert) => {
+    setRecentlyVerified((prev) =>
+      [cert, ...prev.filter((c) => c.certId !== cert.certId)].slice(0, 5)
+    );
+  };
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
   return (
     <>

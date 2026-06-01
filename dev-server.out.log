@@ -595,3 +595,188 @@ src\components\ui\card.jsx
 [39m[22m
 
 webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+Module not found: SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 68
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\components\ui\card.jsx
+  Line 15:3:  Headings [1m[33mmust[39m[22m[1m have content and the content [1m[33mmust[39m[22m[1m be accessible by a screen reader  jsx-a11y/heading-has-content
+
+[39m[22m
+
+[1m[31mERROR[39m[22m in [1mModule [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 68[39m[22m
+
+[1m[31mERROR[39m[22m in [1mModule [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 68[39m[22m
+
+[1m[31mERROR[39m[22m in [1m[32mmain[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 68[39m[22m
+
+[1m[31mERROR[39m[22m in [1mModule [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updates\package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 68[39m[22m
+
+[1m[31mERROR[39m[22m in [1m  [1m[31mError[39m[22m[1m: Child compilation [1m[31mfailed[39m[22m[1m:
+  Module [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Website update\Arc-labs-web  site-updates\package.json (directory description file): SyntaxError: C:\browse  r download\Website update\Arc-labs-website-updates\package.json (directory des  cription file): SyntaxError: C:\browser download\Website update\Arc-labs-websi  te-updates\package.json (directory description file): SyntaxError: C:\browser   download\Website update\Arc-labs-website-updates\package.json (directory descr  iption file): SyntaxError: C:\browser download\Website update\Arc-labs-website  -updates\package.json (directory description file): SyntaxError: C:\browser do  wnload\Website update\Arc-labs-website-updates\package.json (directory descrip  tion file): SyntaxError: C:\browser download\Website update\Arc-labs-website-u  pdates\package.json (directory description file): SyntaxError: C:\browser down  load\Website update\Arc-labs-website-updates\package.json (directory descripti  on file): SyntaxError: C:\browser download\Website update\Arc-labs-website-upd  ates\package.json (directory description file): SyntaxError: C:\browser downlo  ad\Website update\Arc-labs-website-updates\package.json (directory description   file): SyntaxError: C:\browser download\Website update\Arc-labs-website-updat  es\package.json (directory description file): SyntaxError: Expected double-quo  ted property name in JSON at position 68
+  ModuleNotFoundError: Module [1m[31mnot found[39m[22m[1m: SyntaxError: C:\browser download\Websit  e update\Arc-labs-website-updates\package.json (directory description file): S  yntaxError: C:\browser download\Website update\Arc-labs-website-updates\packag  e.json (directory description file): SyntaxError: C:\browser download\Website   update\Arc-labs-website-updates\package.json (directory description file): Syn  taxError: C:\browser download\Website update\Arc-labs-website-updates\package.  json (directory description file): SyntaxError: C:\browser download\Website up  date\Arc-labs-website-updates\package.json (directory description file): Synta  xError: C:\browser download\Website update\Arc-labs-website-updates\package.js  on (directory description file): SyntaxError: C:\browser download\Website upda  te\Arc-labs-website-updates\package.json (directory description file): SyntaxE  rror: C:\browser download\Website update\Arc-labs-website-updates\package.json   (directory description file): SyntaxError: C:\browser download\Website update  \Arc-labs-website-updates\package.json (directory description file): SyntaxErr  or: C:\browser download\Website update\Arc-labs-website-updates\package.json (  directory description file): SyntaxError: C:\browser download\Website update\A  rc-labs-website-updates\package.json (directory description file): SyntaxError  : Expected double-quoted property name in JSON at position 68
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\Compilation.js:2156:28
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:1092:13
+      at eval (eval at create (C:\browser download\Website update\Arc-labs-websi  te-updates\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:  1)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:476:22
+      at eval (eval at create (C:\browser download\Website update\Arc-labs-websi  te-updates\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:9:1  )
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:658:22
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:199:10
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:894:23
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:1406:5
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\neo-async\async.js:2830:7
+      at done (C:\browser download\Website update\Arc-labs-website-updates\node_  modules\neo-async\async.js:2925:13)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\NormalModuleFactory.js:1365:10
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\Resolver.js:998:21
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\Resolver.js:1109:21
+      at eval (eval at create (C:\browser download\Website update\Arc-labs-websi  te-updates\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:24:  1)
+      at done (C:\browser download\Website update\Arc-labs-website-updates\node_  modules\webpack\lib\cache\ResolverCachePlugin.js:379:13)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\webpack\lib\cache\ResolverCachePlugin.js:206:22
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\Resolver.js:1109:21
+      at eval (eval at create (C:\browser download\Website update\Arc-labs-websi  te-updates\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:10:  1)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\Resolver.js:1109:21
+      at eval (eval at create (C:\browser download\Website update\Arc-labs-websi  te-updates\node_modules\tapable\lib\HookCodeFactory.js:31:10), <anonymous>:24:  1)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\DescriptionFilePlugin.js:62:24
+      at onLevelDone (C:\browser download\Website update\Arc-labs-website-update  s\node_modules\enhanced-resolve\lib\DescriptionFileUtils.js:185:19)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\forEachBail.js:39:13
+      at onJson (C:\browser download\Website update\Arc-labs-website-updates\nod  e_modules\enhanced-resolve\lib\DescriptionFileUtils.js:115:12)
+      at C:\browser download\Website update\Arc-labs-website-updates\node_module  s\enhanced-resolve\lib\DescriptionFileUtils.js:139:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:81  :21)
+  
+  - Compilation.js:2156 
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:2156:28
+  
+  - NormalModuleFactory.js:1092 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:1092:13
+  
+  
+  - NormalModuleFactory.js:476 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:476:22
+  
+  
+  - NormalModuleFactory.js:658 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:658:22
+  
+  - NormalModuleFactory.js:199 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:199:10
+  
+  - NormalModuleFactory.js:894 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:894:23
+  
+  - NormalModuleFactory.js:1406 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:1406:5
+  
+  - async.js:2830 
+    [Arc-labs-website-updates]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [Arc-labs-website-updates]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1365 
+    [Arc-labs-website-updates]/[webpack]/lib/NormalModuleFactory.js:1365:10
+  
+  - Resolver.js:998 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/Resolver.js:998:21
+  
+  - Resolver.js:1109 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/Resolver.js:1109:21
+  
+  
+  - ResolverCachePlugin.js:379 done
+    [Arc-labs-website-updates]/[webpack]/lib/cache/ResolverCachePlugin.js:379:13  
+  - ResolverCachePlugin.js:206 
+    [Arc-labs-website-updates]/[webpack]/lib/cache/ResolverCachePlugin.js:206:22  
+  - Resolver.js:1109 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/Resolver.js:1109:21
+  
+  
+  - Resolver.js:1109 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/Resolver.js:1109:21
+  
+  
+  - DescriptionFilePlugin.js:62 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:6    2:24
+  
+  - DescriptionFileUtils.js:185 onLevelDone
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/DescriptionFileUtils.js:18    5:19
+  
+  - forEachBail.js:39 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/forEachBail.js:39:13
+  
+  - DescriptionFileUtils.js:115 onJson
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/DescriptionFileUtils.js:11    5:12
+  
+  - DescriptionFileUtils.js:139 
+    [Arc-labs-website-updates]/[enhanced-resolve]/lib/DescriptionFileUtils.js:13    9:13
+  
+  - task_queues:81 process.processTicksAndRejections
+    node:internal/process/task_queues:81:21
+  
+  - child-compiler.js:211 
+    [Arc-labs-website-updates]/[html-webpack-plugin]/lib/child-compiler.js:211:1    8
+  
+  - Compiler.js:691 finalCallback
+    [Arc-labs-website-updates]/[webpack]/lib/Compiler.js:691:5
+  
+  - Compiler.js:727 
+    [Arc-labs-website-updates]/[webpack]/lib/Compiler.js:727:11
+  
+  - Compiler.js:1436 
+    [Arc-labs-website-updates]/[webpack]/lib/Compiler.js:1436:17
+  
+  
+  - Hook.js:21 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Arc-labs-website-updates]/[tapable]/lib/Hook.js:21:14
+  
+  - Compiler.js:1432 
+    [Arc-labs-website-updates]/[webpack]/lib/Compiler.js:1432:33
+  
+  - Compilation.js:3291 finalCallback
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:3291:11
+  
+  - Compilation.js:3637 
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:3637:11
+  
+  
+  - Hook.js:21 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Arc-labs-website-updates]/[tapable]/lib/Hook.js:21:14
+  
+  - Compilation.js:3630 
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:3630:38
+  
+  
+  - Compilation.js:704 
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:704:11
+  
+  - SourceMapDevToolPlugin.js:917 
+    [Arc-labs-website-updates]/[webpack]/lib/SourceMapDevToolPlugin.js:917:10
+  
+  - async.js:2830 
+    [Arc-labs-website-updates]/[neo-async]/async.js:2830:7
+  
+  - async.js:2857 Object.each
+    [Arc-labs-website-updates]/[neo-async]/async.js:2857:9
+  
+  - SourceMapDevToolPlugin.js:631 
+    [Arc-labs-website-updates]/[webpack]/lib/SourceMapDevToolPlugin.js:631:17
+  
+  - async.js:2830 
+    [Arc-labs-website-updates]/[neo-async]/async.js:2830:7
+  
+  - async.js:2857 Object.each
+    [Arc-labs-website-updates]/[neo-async]/async.js:2857:9
+  
+  - SourceMapDevToolPlugin.js:384 
+    [Arc-labs-website-updates]/[webpack]/lib/SourceMapDevToolPlugin.js:384:15
+  
+  - Compilation.js:684 fn
+    [Arc-labs-website-updates]/[webpack]/lib/Compilation.js:684:9
+  
+  
+  
+[39m[22m
+
+[1m[31m1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)[39m[22m
+webpack compiled with [1m[31m6 errors[39m[22m and [1m[33m1 warning[39m[22m

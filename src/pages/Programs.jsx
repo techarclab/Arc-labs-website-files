@@ -3,11 +3,15 @@ import { jsPDF } from "jspdf";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { Helmet } from "react-helmet-async";
+<<<<<<< HEAD
 import { InteractiveRobotSpline } from "../components/ui/interactive-3d-robot";
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 /* ─── Page-scoped styles (no global overrides) ─── */
 const pageStyles = `
   /* Hero */
   .prog-hero {
+<<<<<<< HEAD
     min-height: 720px;
     padding: 112px 5vw 86px;
     position: relative;
@@ -15,6 +19,11 @@ const pageStyles = `
     display: flex;
     align-items: center;
     justify-content: flex-start;
+=======
+    padding: 80px 5vw 60px;
+    position: relative;
+    overflow: hidden;
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   }
   .prog-hero::before {
     content: '';
@@ -26,6 +35,7 @@ const pageStyles = `
     height: 500px;
     background: radial-gradient(ellipse, rgba(0,212,170,0.05) 0%, rgba(59,130,246,0.03) 40%, transparent 70%);
     pointer-events: none;
+<<<<<<< HEAD
     z-index: 1;
   }
   .prog-robot-bg {
@@ -95,6 +105,15 @@ const pageStyles = `
   :root[data-theme="light"] .prog-hero-inner {
     background: rgba(255,255,255,0.36);
     border-color: rgba(15,23,42,0.08);
+=======
+  }
+  .prog-hero-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   }
   .prog-hero h1 {
     font-size: clamp(2.2rem, 5vw, 3.8rem);
@@ -102,7 +121,10 @@ const pageStyles = `
     letter-spacing: -0.03em;
     margin-bottom: 1.2rem;
     color: var(--text);
+<<<<<<< HEAD
     text-shadow: 0 18px 50px rgba(0,0,0,0.42);
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   }
   .prog-hero h1 em {
     font-style: normal;
@@ -113,17 +135,26 @@ const pageStyles = `
     font-size: 1rem;
     font-weight: 400;
     max-width: 500px;
+<<<<<<< HEAD
     margin: 0 0 2.5rem;
+=======
+    margin: 0 auto 2.5rem;
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     line-height: 1.75;
   }
   .prog-stats-row {
     display: flex;
+<<<<<<< HEAD
     justify-content: flex-start;
+=======
+    justify-content: center;
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     gap: 2.5rem;
     flex-wrap: wrap;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
   }
+<<<<<<< HEAD
   @media (max-width: 768px) {
     .prog-hero {
       min-height: 620px;
@@ -156,6 +187,8 @@ const pageStyles = `
       justify-content: center;
     }
   }
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   .prog-stat { text-align: center; }
   .prog-stat-n {
     font-family: 'Syne', sans-serif;
@@ -2755,6 +2788,10 @@ const DURATION_OPTIONS = [
 ];
 
 const LEAD_EMAIL = "hello@arclabs.in";
+<<<<<<< HEAD
+=======
+const WHATSAPP_NUMBER = "917815809412";
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 const WHATSAPP_DISPLAY = "+91 7815809412";
 
 const getDurationLabel = (duration) =>
@@ -3218,7 +3255,11 @@ function DetailPanel({ tech, onClose }) {
               className="btn btn-primary"
               onClick={() => setShowLead(true)}
             >
+<<<<<<< HEAD
               Download Curriculum
+=======
+              Register Interest
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
             </button>
           </div>
         </div>
@@ -3262,12 +3303,15 @@ export default function ProgramsPage() {
 
       {/* HERO */}
       <div className="prog-hero">
+<<<<<<< HEAD
         <div className="prog-robot-bg" aria-hidden="true">
           <InteractiveRobotSpline
             scene="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode"
             className="prog-robot-scene"
           />
         </div>
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
         <div className="prog-hero-inner">
           <div className="section-label">
             10 Technology Tracks / 3 Workshop Formats

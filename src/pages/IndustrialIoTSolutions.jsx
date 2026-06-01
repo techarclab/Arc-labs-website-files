@@ -20,11 +20,23 @@ import {
   Layers,
   Signal,
   CheckCircle2,
+<<<<<<< HEAD
   ArrowRight,
   PhoneCall,
   Mail,
   Globe,
   Lock,
+=======
+  ChevronRight,
+  ArrowRight,
+  PhoneCall,
+  Mail,
+  HelpCircle,
+  Workflow,
+  Globe,
+  Lock,
+  Menu,
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   ChevronDown,
   Factory
 } from "lucide-react";
@@ -76,6 +88,7 @@ function Sparkline({ points, stroke = "#06b6d4", animate = true, w = 160, h = 40
   );
 }
 
+<<<<<<< HEAD
 /* ─── LIVE PROJECT DASHBOARD MODAL ─────────────────────────────────────
    Opens when a user clicks any of the 10 Core Engineering Capability
    project cards. Shows a real-time dashboard with random telemetry
@@ -689,15 +702,25 @@ export default function IndustrialIoTSolutions() {
 
   // States
   const [activeTrust, setActiveTrust] = useState(TRUST_CAPABILITIES[0].id);
+=======
+export default function IndustrialIoTSolutions() {
+  const containerRef = useRef(null);
+  const globeCanvasRef = useRef(null);
+
+  // States
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   const [activeTab, setActiveTab] = useState("manufacturing");
   const [activeSolution, setActiveSolution] = useState(0);
   const [activeDeployment, setActiveDeployment] = useState("hybrid");
   const [activeUseCase, setActiveUseCase] = useState(0);
   const [faqOpen, setFaqOpen] = useState(Array(8).fill(false));
 
+<<<<<<< HEAD
   // Selected project for the live dashboard modal
   const [selectedProject, setSelectedProject] = useState(null);
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   // Live Telemetry Showcase States
   const [dashboardStatus, setDashboardStatus] = useState("NOMINAL"); // NOMINAL, WARNING, ALERT
   const [sensorValues, setSensorValues] = useState({
@@ -918,11 +941,14 @@ export default function IndustrialIoTSolutions() {
     });
   };
 
+<<<<<<< HEAD
   const activeTrustItem =
     TRUST_CAPABILITIES.find((item) => item.id === activeTrust) || TRUST_CAPABILITIES[0];
   const activeIndustryItem =
     INDUSTRY_SECTORS.find((item) => item.id === activeTab) || INDUSTRY_SECTORS[0];
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   return (
     <>
       <Helmet>
@@ -1101,6 +1127,7 @@ export default function IndustrialIoTSolutions() {
         </section>
 
         {/* SECTION 2 — WHY ARC LABS */}
+<<<<<<< HEAD
         <section className="py-24 px-6 lg:px-16 border-b border-zinc-900 relative z-10 bg-zinc-950/30 overflow-hidden">
           <motion.div
             className="absolute left-[-12%] top-16 h-72 w-72 rounded-full bg-cyan-500/5 blur-3xl"
@@ -1112,6 +1139,9 @@ export default function IndustrialIoTSolutions() {
             animate={{ x: [0, -70, 0], y: [0, -36, 0] }}
             transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
           />
+=======
+        <section className="py-24 px-6 lg:px-16 border-b border-zinc-900 relative z-10 bg-zinc-950/30">
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-16 gsap-reveal">
               <span className="text-cyan-400 font-mono text-xs uppercase tracking-widest">Enterprise Trust</span>
@@ -1124,6 +1154,7 @@ export default function IndustrialIoTSolutions() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+<<<<<<< HEAD
               {TRUST_CAPABILITIES.map((item) => {
                 const Icon = item.icon;
                 const isActive = activeTrust === item.id;
@@ -1156,6 +1187,31 @@ export default function IndustrialIoTSolutions() {
 
             <InsightDetailPanel item={activeTrustItem} eyebrow="Factory Scale Capability" />
 
+=======
+              {[
+                { title: "End-to-End Deployment", desc: "From physical sensor installations and PLC mapping to dashboard terminals.", icon: Settings },
+                { title: "Embedded Firmware Expertise", desc: "Deterministic microcontrollers, real-time operating systems (RTOS), and safety fail-safes.", icon: Cpu },
+                { title: "AI + IoT Integration", desc: "Running predictive diagnostic algorithms directly on secure cloud logic clusters.", icon: Network },
+                { title: "Industrial Dashboards", desc: "Clean SCADA-inspired control room panels built with React for performance and responsiveness.", icon: LineChart },
+                { title: "Edge AI Architectures", desc: "Running deep learning and computer vision on NVIDIA Jetson modules at the site.", icon: Activity },
+                { title: "Telemetry Pipelines", desc: "Highly stable MQTT broker queues capable of handling thousands of sensor packets.", icon: Gauge },
+                { title: "Hardware Integration", desc: "Direct hardware-software loop validation preventing physical interface errors.", icon: Database },
+                { title: "Real-Time Monitoring", desc: "High-resolution telemetry graphs with sub-second transmission delay.", icon: Signal },
+                { title: "Industrial Automation", desc: "Modbus/TCP, Profinet, and OPC-UA bridge setups connecting old manufacturing bays.", icon: Wrench },
+                { title: "Custom PCB Development", desc: "Designing dedicated multi-sensor boards tailored for specific industrial enclosures.", icon: HardDrive }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-zinc-900/40 border border-zinc-800/60 p-5 rounded-lg hover:border-cyan-500/30 transition-all duration-300 group flex flex-col justify-between hover:bg-zinc-900/60 shadow-sm relative">
+                  <div>
+                    <item.icon className="w-7 h-7 text-zinc-500 group-hover:text-cyan-400 transition-colors duration-300 mb-5" />
+                    <h3 className="text-sm font-bold text-white mb-2 leading-snug group-hover:text-cyan-300 transition-colors duration-300">{item.title}</h3>
+                    <p className="text-xs text-zinc-500 leading-relaxed font-sans">{item.desc}</p>
+                  </div>
+                  <div className="absolute bottom-4 right-4 w-1.5 h-1.5 rounded-full bg-zinc-800 group-hover:bg-cyan-500 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
             {/* Metrics sub-band */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-zinc-900/80 max-w-5xl mx-auto text-center">
               <div>
@@ -1179,6 +1235,7 @@ export default function IndustrialIoTSolutions() {
         </section>
 
         {/* SECTION 3 — INDUSTRIES WE SERVE */}
+<<<<<<< HEAD
         <section className="py-24 px-6 lg:px-16 border-b border-zinc-900 relative z-10 overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(6,182,212,0.05),transparent_28%),radial-gradient(circle_at_80%_60%,rgba(16,185,129,0.045),transparent_30%)] pointer-events-none" />
           <motion.div
@@ -1186,6 +1243,9 @@ export default function IndustrialIoTSolutions() {
             animate={{ x: ["-40%", "40%", "-40%"] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           />
+=======
+        <section className="py-24 px-6 lg:px-16 border-b border-zinc-900 relative z-10">
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gsap-reveal">
               <div>
@@ -1200,6 +1260,7 @@ export default function IndustrialIoTSolutions() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+<<<<<<< HEAD
               {INDUSTRY_SECTORS.map((ind) => {
                 const Icon = ind.icon;
                 return (
@@ -1207,12 +1268,30 @@ export default function IndustrialIoTSolutions() {
                   key={ind.id}
                   type="button"
                   className={`text-left bg-zinc-900/30 border p-5 rounded-lg transition-all duration-300 cursor-pointer flex flex-col justify-between h-[230px] relative overflow-hidden ${
+=======
+              {[
+                { id: "manufacturing", name: "Manufacturing", desc: "Machine uptime monitoring, vibration diagnostics, and PLC integration.", icon: Factory, p: [45, 48, 52, 49, 47, 53, 50, 48] },
+                { id: "agriculture", name: "Smart Agriculture", desc: "Automated micro-irrigation, soil moisture matrices, and weather telemetry.", icon: Globe, p: [12, 14, 18, 15, 13, 19, 17, 16] },
+                { id: "warehousing", name: "Warehousing", desc: "RFID inventory pipelines, environmental logs, and autonomous routing.", icon: Database, p: [80, 82, 85, 83, 81, 88, 86, 84] },
+                { id: "cold_storage", name: "Cold Storage", desc: "Multi-tier temperature monitoring, sensor logs, and anomaly cooling triggers.", icon: ShieldAlert, p: [-18, -17, -19, -18, -17, -19, -18, -18] },
+                { id: "smart_cities", name: "Smart Cities", desc: "Acoustic noise matrices, ambient air telemetry, and lighting grid controls.", icon: Network, p: [350, 360, 380, 370, 355, 390, 375, 370] },
+                { id: "water", name: "Water Management", desc: "Flow telemetry, water level analytics, and valve actuator loops.", icon: Activity, p: [120, 125, 122, 128, 124, 132, 129, 128] },
+                { id: "logistics", name: "Logistics", desc: "Real-time transport telematics, refrigeration logs, and route optimization.", icon: Signal, p: [62, 65, 68, 64, 63, 67, 66, 65] },
+                { id: "pharma", name: "Pharma", desc: "SLA-compliant batch environment logging and clean room air flow matrices.", icon: Lock, p: [22, 22, 23, 22, 21, 23, 22, 22] },
+                { id: "automation", name: "Industrial Automation", desc: "Modbus conversions, SCADA linking, and pneumatic valve automation.", icon: Settings, p: [8, 9, 8, 10, 9, 11, 10, 9] },
+                { id: "energy", name: "Energy Monitoring", desc: "Direct grid sub-metering, harmonic current tracking, and load analysis.", icon: Zap, p: [1500, 1550, 1600, 1580, 1540, 1620, 1590, 1580] }
+              ].map((ind) => (
+                <div
+                  key={ind.id}
+                  className={`bg-zinc-900/30 border p-5 rounded-lg transition-all duration-300 cursor-pointer flex flex-col justify-between h-[230px] relative overflow-hidden ${
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                     activeTab === ind.id 
                       ? "border-cyan-500/60 shadow-lg shadow-cyan-950/20 bg-zinc-900/60" 
                       : "border-zinc-800/80 hover:border-zinc-700/60 hover:bg-zinc-900/50"
                   }`}
                   onClick={() => setActiveTab(ind.id)}
                 >
+<<<<<<< HEAD
                   <motion.div
                     className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-500/5 blur-2xl"
                     animate={{ scale: activeTab === ind.id ? [1, 1.25, 1] : 1 }}
@@ -1221,6 +1300,11 @@ export default function IndustrialIoTSolutions() {
                   <div>
                     <div className="flex justify-between items-center mb-4">
                       <Icon className={`w-6 h-6 ${activeTab === ind.id ? "text-cyan-400" : "text-zinc-500"}`} />
+=======
+                  <div>
+                    <div className="flex justify-between items-center mb-4">
+                      <ind.icon className={`w-6 h-6 ${activeTab === ind.id ? "text-cyan-400" : "text-zinc-500"}`} />
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                       {activeTab === ind.id && (
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />
                       )}
@@ -1234,12 +1318,18 @@ export default function IndustrialIoTSolutions() {
                     <span className="text-[8px] font-mono text-zinc-500 block mb-1">REAL-TIME VARIABLE LOG</span>
                     <Sparkline points={ind.p} stroke={activeTab === ind.id ? "#06b6d4" : "#52525b"} animate={activeTab === ind.id} />
                   </div>
+<<<<<<< HEAD
                 </button>
                 );
               })}
             </div>
 
             <InsightDetailPanel item={activeIndustryItem} eyebrow="Target Sector Model" />
+=======
+                </div>
+              ))}
+            </div>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           </div>
         </section>
 
@@ -1341,11 +1431,15 @@ export default function IndustrialIoTSolutions() {
               ].map((sol, index) => (
                 <div
                   key={index}
+<<<<<<< HEAD
                   role="button"
                   tabIndex={0}
                   onClick={() => setSelectedProject(sol)}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setSelectedProject(sol); }}
                   className={`group bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-8 transition-all duration-300 hover:border-cyan-500/60 hover:bg-zinc-900/60 cursor-pointer relative overflow-hidden flex flex-col justify-between ${
+=======
+                  className={`bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-8 transition-all duration-300 hover:border-cyan-500/40 relative overflow-hidden flex flex-col justify-between ${
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                     activeSolution === index ? "shadow-lg shadow-cyan-950/20" : ""
                   }`}
                   onMouseEnter={() => setActiveSolution(index)}
@@ -1374,11 +1468,16 @@ export default function IndustrialIoTSolutions() {
                         </span>
                       ))}
                     </div>
+<<<<<<< HEAD
 
+=======
+                    
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                     <div className="flex justify-between items-center">
                       <span className="text-[9px] font-mono text-zinc-600 uppercase tracking-widest">TELEMETRY LOOP WAVE</span>
                       <Sparkline points={sol.p} stroke="#06b6d4" animate={activeSolution === index} />
                     </div>
+<<<<<<< HEAD
 
                     {/* Click-to-open hint */}
                     <div className="mt-4 flex items-center justify-between">
@@ -1390,6 +1489,8 @@ export default function IndustrialIoTSolutions() {
                         Open Telemetry <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                   </div>
                 </div>
               ))}
@@ -2189,6 +2290,7 @@ export default function IndustrialIoTSolutions() {
           </div>
         </section>
 
+<<<<<<< HEAD
         {/* LIVE PROJECT DASHBOARD MODAL — triggered by clicking any
             of the 10 Core Engineering Capability project cards */}
         <AnimatePresence>
@@ -2208,6 +2310,8 @@ export default function IndustrialIoTSolutions() {
           )}
         </AnimatePresence>
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
       </div>
     </>
   );

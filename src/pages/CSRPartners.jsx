@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { useState } from "react";
+=======
+import { useState, useEffect, useRef } from "react";
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 

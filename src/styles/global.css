@@ -59,7 +59,10 @@
   --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
   --shadow-lg: 0 12px 40px rgba(0,0,0,0.5);
   --shadow-xl: 0 24px 60px rgba(0,0,0,0.6);
+<<<<<<< HEAD
   --grid-line: rgba(255,255,255,0.015);
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
   /* Aliases (compatibility with page-scoped styles) */
   --text-1:       var(--text);
@@ -69,6 +72,7 @@
   --font-mono:     'JetBrains Mono', monospace;
 }
 
+<<<<<<< HEAD
 :root[data-theme="light"] {
   /* Surfaces */
   --bg:       #f7fafc;
@@ -112,6 +116,8 @@
   --grid-line: rgba(15,23,42,0.035);
 }
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 /* ── Base ── */
 html { scroll-behavior: smooth; }
 
@@ -125,7 +131,10 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   transition: background-color 0.35s ease, color 0.35s ease;
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 }
 
 ::selection { background: var(--accent); color: var(--bg); }
@@ -146,8 +155,13 @@ body::before {
   pointer-events: none;
   z-index: 0;
   background-image:
+<<<<<<< HEAD
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+=======
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   background-size: 64px 64px;
 }
 

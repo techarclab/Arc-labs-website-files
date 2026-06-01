@@ -21,11 +21,15 @@ export default function Checkout() {
     name: "",
     email: "",
     phone: "",
+<<<<<<< HEAD
     country: "India",
     address: "",
     city: "",
     region: "",
     zip: "",
+=======
+    city: "",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   });
 
   const [paymentMethod, setPaymentMethod] = useState("upi_manual");
@@ -47,8 +51,13 @@ export default function Checkout() {
   }, []);
 
   const handlePayment = () => {
+<<<<<<< HEAD
     if (!form.name || !form.email || !form.phone || !form.address || !form.city || !form.region || !form.zip) {
       alert("Please fill all delivery address details");
+=======
+    if (!form.name || !form.email || !form.phone || !form.city) {
+      alert("Please fill all details");
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
       return;
     }
     if (!price || !product) {
@@ -78,11 +87,15 @@ export default function Checkout() {
           customer_name: form.name,
           customer_email: form.email,
           customer_phone: form.phone,
+<<<<<<< HEAD
           customer_country: form.country,
           customer_address: form.address,
           customer_city: form.city,
           customer_region: form.region,
           customer_zip: form.zip,
+=======
+          customer_city: form.city,
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           customer_state_code: "36",
           product_id: productId,
           product_name: product.name,
@@ -119,11 +132,15 @@ options.handler = async function (response) {
       customerName: form.name,
       customerEmail: form.email,
       customerPhone: form.phone,
+<<<<<<< HEAD
       customerCountry: form.country,
       customerAddress: form.address,
       customerCity: form.city,
       customerRegion: form.region,
       customerZip: form.zip,
+=======
+      customerCity: form.city,
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
       productId: product.id,
       productName: product.name,
@@ -149,6 +166,7 @@ options.handler = async function (response) {
     doc.text(`Customer Name: ${form.name}`, 20, 40);
     doc.text(`Email: ${form.email}`, 20, 50);
     doc.text(`Phone: ${form.phone}`, 20, 60);
+<<<<<<< HEAD
     doc.text(`Country: ${form.country}`, 20, 70);
     doc.text(`Address: ${form.address}`, 20, 80);
     doc.text(`City: ${form.city}`, 20, 90);
@@ -157,17 +175,31 @@ options.handler = async function (response) {
 
     doc.text(`Product: ${product.name}`, 20, 130);
     doc.text(`Price: ₹${price} + GST`, 20, 140);
+=======
+    doc.text(`City: ${form.city}`, 20, 70);
+
+    doc.text(`Product: ${product.name}`, 20, 90);
+    doc.text(`Price: ₹${price} + GST`, 20, 100);
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
     doc.text(
       `Payment ID: ${response.razorpay_payment_id}`,
       20,
+<<<<<<< HEAD
       160
+=======
+      120
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     );
 
     doc.text(
       `Status: PAID`,
       20,
+<<<<<<< HEAD
       170
+=======
+      130
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     );
 
     doc.save(
@@ -239,11 +271,15 @@ options.handler = async function (response) {
       name: "",
       email: "",
       phone: "",
+<<<<<<< HEAD
       country: "India",
       address: "",
       city: "",
       region: "",
       zip: "",
+=======
+      city: "",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     });
 
     setUpiId("");
@@ -345,6 +381,7 @@ options.handler = async function (response) {
             pattern="[0-9]{10}"
           />
 
+<<<<<<< HEAD
           <h4 className="co-section-heading" style={{ marginTop: "1rem", marginBottom: "0.4rem", fontSize: "0.95rem", fontWeight: 600 }}>
             Shipping / Delivery Address
           </h4>
@@ -376,6 +413,8 @@ options.handler = async function (response) {
             required
           />
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           <input
             type="text"
             placeholder="City *"
@@ -385,6 +424,7 @@ options.handler = async function (response) {
             required
           />
 
+<<<<<<< HEAD
           <input
             type="text"
             placeholder="State / Region *"
@@ -403,6 +443,8 @@ options.handler = async function (response) {
             required
           />
 
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           {/* PAYMENT METHOD SELECTION */}
           <div className="co-methods-section">
             <label className="co-methods-label">Select Payment Method:</label>

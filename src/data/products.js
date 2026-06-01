@@ -5,6 +5,7 @@
 
 export const PRODUCTS = [
   {
+<<<<<<< HEAD
     id: "basic",
     tier: "TIER 01 · BASIC",
     name: "ARC LABS IoT Basic Kit",
@@ -92,6 +93,10 @@ export const PRODUCTS = [
   {
     id: "lite",
     tier: "TIER 02 · STARTER",
+=======
+    id: "lite",
+    tier: "TIER 01 · STARTER",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Lite Kit",
     short: "IoT Lite Kit",
     tagline:
@@ -174,7 +179,11 @@ export const PRODUCTS = [
   },
   {
     id: "experience",
+<<<<<<< HEAD
     tier: "TIER 03 · FLAGSHIP",
+=======
+    tier: "TIER 02 · FLAGSHIP",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Experience Kit",
     short: "IoT Experience Kit",
     tagline:
@@ -288,7 +297,11 @@ export const PRODUCTS = [
   },
   {
     id: "pro",
+<<<<<<< HEAD
     tier: "TIER 04 · ADVANCED",
+=======
+    tier: "TIER 03 · ADVANCED",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Pro Kit",
     short: "IoT Pro Kit",
     tagline:

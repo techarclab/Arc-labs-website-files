@@ -2,6 +2,10 @@ import {
   getTech,
   getDurationLabel,
   getTrainingHours,
+<<<<<<< HEAD
+=======
+  formatDate,
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 } from "../utils/certificationHelpers.js";
 
 export default function CertificateDisplay({ cert }) {
@@ -72,4 +76,8 @@ export default function CertificateDisplay({ cert }) {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2

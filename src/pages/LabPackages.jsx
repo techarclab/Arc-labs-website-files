@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React, { useState, useEffect } from "react";
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 import { Link } from "react-router-dom";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
@@ -1037,7 +1041,11 @@ export default function LabPackagesPage() {
         <p>Get a free, no-obligation proposal tailored to your institution within 48 hours.</p>
         <div style={{ display: "flex", gap: ".8rem", justifyContent: "center", flexWrap: "wrap", position: "relative" }}>
           <button className="btn btn-primary" onClick={() => setModal({ pkg: null })}>Get Custom Proposal</button>
+<<<<<<< HEAD
           <a href="https://wa.me/917815809412" className="btn btn-ghost" target="_blank" rel="noreferrer">WhatsApp Us</a>
+=======
+          <a href="https://wa.me/918699929532" className="btn btn-ghost" target="_blank" rel="noreferrer">WhatsApp Us</a>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
         </div>
         <p style={{ marginTop: "1.5rem", fontSize: ".85rem", color: "var(--text-3)" }}>
           Looking for training programs instead? <Link to="/programs" style={{ color: "var(--accent)" }}>Explore our workshops &amp; courses &rarr;</Link>

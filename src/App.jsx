@@ -5,8 +5,11 @@ import "./styles/global.css";
 import "./styles/App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+<<<<<<< HEAD
 import ArcLabsChatBot from "./components/ArcLabsChatBot";
 import { ThemeDock } from "./components/ui/docks";
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
 // Pages — lazy-loaded
 const Home = lazy(() => import("./pages/Home"));
@@ -48,8 +51,11 @@ function Layout({ children }) {
       <Navbar />
       <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
       <Footer />
+<<<<<<< HEAD
       <ThemeDock />
       <ArcLabsChatBot />
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
       <a
         href="https://wa.me/918699929532"
         className="wa-float"
@@ -72,6 +78,7 @@ export default function App() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
+<<<<<<< HEAD
             <Route path="/robotics-labs" element={<LabPackages />} />
             <Route path="/iot-labs" element={<LabPackages />} />
             <Route path="/ai-labs" element={<LabPackages />} />
@@ -80,6 +87,9 @@ export default function App() {
             <Route path="/virtual-lab" element={<Programs />} />
             <Route path="/courses" element={<Programs />} />
             <Route path="/contact" element={<Home />} />
+=======
+            <Route path="/industrial-iot-solutions" element={<IndustrialIoTSolutions />} />
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
             <Route path="/programs" element={<Programs />} />
             <Route path="/products" element={<Products />} />
             <Route path="/lab-packages" element={<LabPackages />} />

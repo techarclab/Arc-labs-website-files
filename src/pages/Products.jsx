@@ -1,11 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+<<<<<<< HEAD
 import { DottedSurface } from "../components/ui/dotted-surface";
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
 /* ─── SCOPED STYLES ────────────────────────────────────────────────── */
 const pageStyles = `
 /* Hero */
+<<<<<<< HEAD
 .ph-hero{min-height:440px;padding:108px 5vw 72px;text-align:center;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .ph-hero::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:900px;height:430px;pointer-events:none;background:radial-gradient(ellipse,rgba(0,212,170,0.10) 0%,rgba(59,130,246,0.06) 45%,transparent 70%);z-index:1}
 .product-dotted-surface{position:absolute;inset:-90px 0 -120px;pointer-events:none;z-index:0;opacity:.52}
@@ -15,6 +19,13 @@ const pageStyles = `
 .ph-hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.035em;line-height:1.08;margin-bottom:1rem;position:relative;text-shadow:0 18px 55px rgba(0,0,0,.55)}
 .ph-hero h1 em{font-style:normal;color:var(--accent)}
 .ph-hero p{color:var(--text-3);font-size:1rem;font-weight:400;max-width:560px;margin:0 auto 0;line-height:1.75;position:relative}
+=======
+.ph-hero{padding:80px 5vw 56px;text-align:center;position:relative;overflow:hidden}
+.ph-hero::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:800px;height:400px;pointer-events:none;background:radial-gradient(ellipse,rgba(0,212,170,0.05) 0%,rgba(59,130,246,0.03) 45%,transparent 70%)}
+.ph-hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.035em;line-height:1.08;margin-bottom:1rem;position:relative}
+.ph-hero h1 em{font-style:normal;color:var(--accent)}
+.ph-hero p{color:var(--text-3);font-size:1rem;font-weight:400;max-width:500px;margin:0 auto 2.2rem;line-height:1.75;position:relative}
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 
 /* Filter bar */
 .filter-bar{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;padding:0 5vw 52px;position:relative;z-index:1}
@@ -69,7 +80,38 @@ const pageStyles = `
 .kit-photo-wrap{width:min(560px,82vw);aspect-ratio:16/9;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:linear-gradient(135deg,rgba(var(--kit-glow),.18),rgba(255,255,255,.04)),var(--surface);box-shadow:0 28px 60px rgba(0,0,0,.36),inset 0 0 0 1px rgba(255,255,255,.06);position:relative;overflow:hidden;animation:kitDrop .72s cubic-bezier(.18,.89,.32,1.22) both;transform-origin:center}
 .kit-photo-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);transform:translateX(-120%);animation:kitShine 1.4s ease .65s both}
 .kit-photo{width:100%;height:100%;object-fit:cover;display:block}
+<<<<<<< HEAD
 
+=======
+.kit-parts-layer{position:absolute;inset:0;pointer-events:none}
+.kit-chip{position:absolute;left:var(--land-x);top:var(--land-y);width:var(--part-w,54px);height:var(--part-h,42px);border-radius:9px;background:linear-gradient(135deg,rgba(13,21,32,.96),rgba(30,41,59,.92));border:1px solid rgba(255,255,255,.18);box-shadow:0 10px 20px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.05);backdrop-filter:blur(8px);animation:componentFall 2.2s cubic-bezier(.16,.72,.2,1) both;animation-delay:var(--fall-delay);display:flex;align-items:center;justify-content:center}
+.kit-chip.sensor{border-color:rgba(var(--kit-glow),.38);background:linear-gradient(135deg,rgba(var(--kit-glow),.2),rgba(14,20,30,.92))}
+.kit-chip.output{background:linear-gradient(135deg,rgba(var(--kit-glow),.32),rgba(255,255,255,.08))}
+.part-board{position:absolute;inset:6px;border-radius:6px;background:rgba(255,255,255,.055);border:1px dashed rgba(255,255,255,.12)}
+.part-pin{position:absolute;width:3px;height:6px;border-radius:2px;background:rgba(255,255,255,.5)}
+.part-pin.p1{left:8px;top:-3px}.part-pin.p2{left:16px;top:-3px}.part-pin.p3{right:16px;bottom:-3px}.part-pin.p4{right:8px;bottom:-3px}
+.part-symbol{position:relative;z-index:2;width:24px;height:24px;color:var(--kit-color);display:flex;align-items:center;justify-content:center}
+.part-label{position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;font-size:.5rem;font-weight:700;line-height:1;white-space:nowrap;color:var(--text-2);background:rgba(7,10,16,.76);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:3px 6px}
+.part-symbol.temp::before{content:'';width:6px;height:16px;border:2px solid currentColor;border-radius:6px 6px 3px 3px}
+.part-symbol.temp::after{content:'';position:absolute;bottom:1px;width:12px;height:12px;border-radius:50%;background:currentColor}
+.part-symbol.distance::before{content:'';width:22px;height:12px;border:2px solid currentColor;border-radius:999px}
+.part-symbol.distance::after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background:currentColor;box-shadow:10px 0 0 currentColor}
+.part-symbol.light::before{content:'';width:14px;height:14px;border:2px solid currentColor;border-radius:50%;box-shadow:0 0 12px currentColor}
+.part-symbol.light::after{content:'';position:absolute;width:2px;height:24px;background:currentColor;transform:rotate(45deg);box-shadow:8px -8px 0 -1px currentColor,-8px 8px 0 -1px currentColor}
+.part-symbol.gas::before{content:'';width:19px;height:19px;border:2px solid currentColor;border-radius:50%}
+.part-symbol.gas::after{content:'';position:absolute;width:4px;height:4px;border-radius:50%;background:currentColor;box-shadow:-6px -4px 0 currentColor,7px 4px 0 currentColor}
+.part-symbol.touch::before{content:'';width:18px;height:18px;border:2px solid currentColor;border-radius:50%}
+.part-symbol.touch::after{content:'';position:absolute;width:8px;height:8px;border-radius:50%;background:currentColor}
+.part-symbol.motion::before{content:'';width:18px;height:10px;border:2px solid currentColor;border-radius:10px 10px 2px 2px}
+.part-symbol.motion::after{content:'';position:absolute;bottom:2px;width:2px;height:10px;background:currentColor;box-shadow:-6px 0 0 currentColor,6px 0 0 currentColor}
+.part-symbol.display::before{content:'';width:22px;height:15px;border:2px solid currentColor;border-radius:3px}
+.part-symbol.display::after{content:'';position:absolute;bottom:1px;width:12px;height:2px;background:currentColor}
+.part-symbol.relay::before{content:'';width:20px;height:14px;border:2px solid currentColor;border-radius:3px}
+.part-symbol.relay::after{content:'';position:absolute;width:14px;height:2px;background:currentColor;transform:rotate(-22deg)}
+.part-symbol.controller::before{content:'';width:22px;height:18px;border:2px solid currentColor;border-radius:3px;background:rgba(var(--kit-glow),.14)}
+.part-symbol.controller::after{content:'';position:absolute;width:2px;height:24px;background:currentColor;box-shadow:-8px 0 0 currentColor,8px 0 0 currentColor}
+.part-symbol.default::before{content:'';width:18px;height:18px;border:2px solid currentColor;border-radius:4px;transform:rotate(45deg)}
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 @keyframes kitDrop{0%{opacity:0;transform:translateY(-260px) rotate(-4deg) scale(.9)}72%{opacity:1;transform:translateY(12px) rotate(1deg) scale(1.02)}100%{opacity:1;transform:translateY(0) rotate(0) scale(1)}}
 @keyframes kitShine{to{transform:translateX(120%)}}
 @keyframes componentFall{0%{opacity:0;transform:translate3d(var(--fall-x),-360px,0) rotate(var(--fall-rot)) scale(.78)}58%{opacity:1;transform:translate3d(calc(var(--fall-x) * .24),-38px,0) rotate(calc(var(--fall-rot) * .35)) scale(.96)}82%{opacity:1;transform:translate3d(0,10px,0) rotate(2deg) scale(1.03)}100%{opacity:1;transform:translate3d(0,0,0) rotate(0) scale(1)}}
@@ -138,9 +180,12 @@ const pageStyles = `
 .fct{width:100%;border-collapse:separate;border-spacing:0}
 .fct thead tr th{padding:14px 18px;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--border-2);text-align:center}
 .fct thead tr th:first-child{text-align:left;color:var(--text-3);font-weight:500;font-size:.72rem;text-transform:none;letter-spacing:0}
+<<<<<<< HEAD
 .fct thead .th-essential{
   color:#00ff9d;
 }
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 .fct thead .th-lite{color:var(--amber)}
 .fct thead .th-kit{color:var(--accent)}
 .fct thead .th-pro{color:var(--blue)}
@@ -165,13 +210,20 @@ const pageStyles = `
 .pcta-btns{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;position:relative}
 
 @media(max-width:768px){
+<<<<<<< HEAD
   .ph-hero{min-height:390px;padding:92px 5vw 58px}
   .product-dotted-surface{inset:-60px -30% -110px;opacity:.42}
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   .kit-stage{min-height:440px;padding:84px 18px 24px}
   .kit-caption{left:20px;top:22px;right:20px}
   .kit-board{width:100%;min-height:300px}
   .kit-photo-wrap{width:100%}
+<<<<<<< HEAD
 
+=======
+  .kit-chip{font-size:.56rem;padding:6px 7px}
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   .dd-header{padding:22px 20px 18px}
   .dd-content{padding:20px}
   .dd-cta{padding:16px 20px}
@@ -183,6 +235,7 @@ const pageStyles = `
 /* ─── PRODUCT DATA ──────────────────────────────────────────────── */
 const PRODUCTS = [
   {
+<<<<<<< HEAD
     id: "essential",
     tier: "TIER 01 · essential",
     name: "ARC LABS IoT Essential Kit",
@@ -218,6 +271,10 @@ const PRODUCTS = [
   {
     id: "lite",
     tier: "TIER 02 · STARTER",
+=======
+    id: "lite",
+    tier: "TIER 01 · STARTER",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Lite Kit",
     short: "IoT Lite Kit",
     tagline: "Compact, beginner-friendly IoT training board for Arduino & ESP32.",
@@ -252,7 +309,11 @@ const PRODUCTS = [
   },
   {
     id: "experience",
+<<<<<<< HEAD
     tier: "TIER 03 · FLAGSHIP",
+=======
+    tier: "TIER 02 · FLAGSHIP",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Experience Kit",
     short: "IoT Experience Kit",
     tagline: "All-in-one multi-MCU trainer — the most versatile kit in the lineup.",
@@ -290,7 +351,11 @@ const PRODUCTS = [
   },
   {
     id: "pro",
+<<<<<<< HEAD
     tier: "TIER 04 · ADVANCED",
+=======
+    tier: "TIER 03 · ADVANCED",
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     name: "ARC LABS IoT Pro Kit",
     short: "IoT Pro Kit",
     tagline: "High-performance board for advanced IoT, edge AI, and Raspberry Pi.",
@@ -329,6 +394,7 @@ const PRODUCTS = [
 
 /* ─── COMPARISON DATA ──────────────────────────────────────────── */
 const COMPARE_ROWS = [
+<<<<<<< HEAD
 
   {
     section: "CONTROLLERS",
@@ -567,6 +633,41 @@ const COMPARE_ROWS = [
   },
 
 ];
+=======
+  { cat: true, label: "Controllers" },
+  { label: "Arduino UNO", lite: "✓", exp: "✓", pro: "—" },
+  { label: "ESP32", lite: "✓", exp: "✓", pro: "✓" },
+  { label: "STM32", lite: "—", exp: "✓", pro: "—" },
+  { label: "Raspberry Pi Pico/W", lite: "—", exp: "✓", pro: "—" },
+  { label: "Raspberry Pi 4/5", lite: "—", exp: "✓", pro: "✓" },
+  { cat: true, label: "Sensors" },
+  { label: "DHT11 Temp & Humidity", lite: "✓", exp: "✓", pro: "✓" },
+  { label: "Ultrasonic HC-SR04", lite: "✓", exp: "✓", pro: "✓" },
+  { label: "BMP180 Barometric", lite: "—", exp: "✓", pro: "✓" },
+  { label: "INA219 Current/Voltage", lite: "—", exp: "✓", pro: "—" },
+  { label: "MQ-135 Gas & Air Quality", lite: "✓", exp: "—", pro: "✓" },
+  { label: "ADXL345 Accelerometer", lite: "—", exp: "—", pro: "✓" },
+  { label: "LDR Light Sensor", lite: "✓", exp: "—", pro: "✓" },
+  { label: "Touch Sensor", lite: "✓", exp: "—", pro: "✓" },
+  { label: "IR Obstacle Sensor", lite: "✓", exp: "✓", pro: "✓" },
+  { cat: true, label: "Display & Output" },
+  { label: "OLED 0.96\" (I2C)", lite: "✓", exp: "—", pro: "—" },
+  { label: "TFT 1.8\" Color (SPI)", lite: "—", exp: "✓", pro: "✓" },
+  { label: "7-Segment Display", lite: "—", exp: "—", pro: "✓" },
+  { label: "RGB LEDs", lite: "✓", exp: "✓", pro: "✓" },
+  { label: "Active Buzzer", lite: "✓", exp: "✓", pro: "✓" },
+  { cat: true, label: "Connectivity" },
+  { label: "Wi-Fi + Bluetooth (ESP32)", lite: "✓", exp: "✓", pro: "✓" },
+  { label: "LoRa Interface", lite: "—", exp: "✓", pro: "—" },
+  { label: "GSM/4G (SIMCOM)", lite: "—", exp: "✓", pro: "—" },
+  { label: "RS485 Industrial", lite: "—", exp: "✓", pro: "—" },
+  { label: "MCP3008 ADC Expansion", lite: "—", exp: "—", pro: "✓" },
+  { cat: true, label: "Pricing" },
+  { label: "Price (incl. GST)", lite: "₹15,000", exp: "₹20,000", pro: "₹25,000", priceRow: true },
+  { label: "Best For", lite: "Beginners", exp: "All levels", pro: "Advanced" },
+];
+
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
 /* ─── DETAIL DRAWER ──────────────────────────────────────────────── */
 function DetailDrawer({ product, onClose }) {
   const [tab, setTab] = useState("specs");
@@ -583,6 +684,30 @@ function DetailDrawer({ product, onClose }) {
     { id: "compare", label: "Compare All" },
   ];
 
+<<<<<<< HEAD
+=======
+  const cleanLabel = (value) => value.split(/[—-]/)[0].split("(")[0].trim();
+  const getPartIcon = (label, type) => {
+    const value = label.toLowerCase();
+    if (type === "controller" || value.includes("arduino") || value.includes("esp32") || value.includes("raspberry") || value.includes("stm32")) return "controller";
+    if (value.includes("dht") || value.includes("temp") || value.includes("humidity") || value.includes("bmp")) return "temp";
+    if (value.includes("ultrasonic") || value.includes("distance")) return "distance";
+    if (value.includes("ldr") || value.includes("light")) return "light";
+    if (value.includes("gas") || value.includes("mq")) return "gas";
+    if (value.includes("touch")) return "touch";
+    if (value.includes("ir") || value.includes("obstacle") || value.includes("accelerometer") || value.includes("adxl")) return "motion";
+    if (value.includes("oled") || value.includes("tft") || value.includes("display") || value.includes("segment") || value.includes("rgb") || value.includes("buzzer")) return "display";
+    if (value.includes("relay") || value.includes("servo")) return "relay";
+    return "default";
+  };
+  const animatedParts = [
+    ...product.controllers.slice(0, 3).map((item) => ({ type: "controller", label: cleanLabel(item) })),
+    ...product.sensors.slice(0, 7).map((item) => ({ type: "sensor", label: cleanLabel(item) })),
+    ...product.display.slice(0, 3).map((item) => ({ type: "output", label: cleanLabel(item) })),
+    ...product.actuators.slice(0, 2).map((item) => ({ type: "output", label: cleanLabel(item) })),
+  ].map((part) => ({ ...part, icon: getPartIcon(part.label, part.type) }));
+
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
   return (
     <div
       className="detail-drawer"
@@ -595,12 +720,52 @@ function DetailDrawer({ product, onClose }) {
       <div className="kit-stage">
         <div className="kit-caption">
           {product.short} assembly
+<<<<<<< HEAD
+=======
+          <span>The kit image drops first. Components then fall into place on the kit.</span>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
         </div>
         <div className="kit-board">
           <div className="kit-photo-wrap">
             <img className="kit-photo" src={product.image} alt={product.name} />
           </div>
+<<<<<<< HEAD
     
+=======
+          <div className="kit-parts-layer">
+            {animatedParts.map((part, i) => {
+              const positions = [
+                ["8%", "17%"], ["35%", "10%"], ["64%", "16%"],
+                ["14%", "39%"], ["40%", "34%"], ["68%", "38%"],
+                ["22%", "60%"], ["51%", "58%"], ["74%", "61%"],
+                ["10%", "76%"], ["37%", "78%"], ["63%", "76%"],
+                ["80%", "24%"], ["82%", "49%"], ["77%", "78%"],
+              ];
+              const [landX, landY] = positions[i % positions.length];
+              return (
+                <span
+                  className={`kit-chip ${part.type === "controller" ? "" : part.type}`}
+                  key={`${part.type}-${part.label}-${i}`}
+                  style={{
+                    "--land-x": landX,
+                    "--land-y": landY,
+                    "--fall-delay": `${0.9 + i * 0.18}s`,
+                    "--fall-x": `${(i % 3 - 1) * (48 + i * 3)}px`,
+                    "--fall-rot": `${(i % 2 === 0 ? -1 : 1) * (9 + i * 2)}deg`,
+                  }}
+                >
+                  <span className="part-board" />
+                  <span className="part-pin p1" />
+                  <span className="part-pin p2" />
+                  <span className="part-pin p3" />
+                  <span className="part-pin p4" />
+                  <span className={`part-symbol ${part.icon}`} aria-hidden="true" />
+                  <span className="part-label">{part.label}</span>
+                </span>
+              );
+            })}
+          </div>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
         </div>
       </div>
       <div className="dd-header">
@@ -684,6 +849,7 @@ function DetailDrawer({ product, onClose }) {
         {tab === "compare" && (
           <div style={{ overflowX: "auto" }}>
             <table className="fct">
+<<<<<<< HEAD
 <thead>
   <tr>
     <th style={{ minWidth: "210px" }}>Feature</th>
@@ -748,11 +914,27 @@ function DetailDrawer({ product, onClose }) {
               <tbody>
                 {COMPARE_ROWS.map((row, i) => {
 if (row.cat) return <tr className="fct-cat" key={i}><td colSpan={5}>{row.label}</td></tr>;
+=======
+              <thead>
+                <tr>
+                  <th style={{ minWidth: "200px" }}> </th>
+                  <th className="th-lite">IoT Lite Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>Beginner</span></th>
+                  <th className="th-kit">IoT Experience Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>Flagship</span></th>
+                  <th className="th-pro">IoT Pro Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>Advanced</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                {COMPARE_ROWS.map((row, i) => {
+                  if (row.cat) return <tr className="fct-cat" key={i}><td colSpan={4}>{row.label}</td></tr>;
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                   const cls = (v) => v === "✓" ? "fct-yes" : v === "—" ? "fct-no" : row.priceRow ? "fct-val" : "";
                   return (
                     <tr key={i} className={row.priceRow ? "price-row-fct" : ""}>
                       <td>{row.label}</td>
+<<<<<<< HEAD
                       <td className={cls(row.essential)}>{row.essential}</td>
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
                       <td className={cls(row.lite)}>{row.lite}</td>
                       <td className={cls(row.exp)}>{row.exp}{row.label === "Best For" && <span className="fct-best" style={{ marginLeft: 6 }}>BEST</span>}</td>
                       <td className={cls(row.pro)}>{row.pro}</td>
@@ -770,7 +952,11 @@ if (row.cat) return <tr className="fct-cat" key={i}><td colSpan={5}>{row.label}<
           <strong>{product.short}</strong> · ₹{product.price.toLocaleString("en-IN")} · Made in India
         </div>
         <div className="dd-cta-btns">
+<<<<<<< HEAD
           <a href="https://wa.me/917815809412" className="btn btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>
+=======
+          <a href="https://wa.me/918699929532" className="btn btn-secondary" target="_blank" rel="noreferrer">WhatsApp</a>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           <button className="btn btn-primary" style={{ background: product.color }} onClick={() => window.location.href = `/checkout?product=${product.id}&price=${product.price}`}>
             Order This Kit &rarr;
           </button>
@@ -857,7 +1043,10 @@ export default function ProductsPage() {
   const [selected, setSelected] = useState(null);
   const [filter, setFilter] = useState("all");
   const filterKitMap = {
+<<<<<<< HEAD
     essential: "essential",
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     beginner: "lite",
     flagship: "experience",
     advanced: "pro",
@@ -871,7 +1060,10 @@ export default function ProductsPage() {
   };
 
   const filtered = filter === "all" ? PRODUCTS
+<<<<<<< HEAD
     : filter === "essential" ? PRODUCTS.filter((p) => p.id === "essential")
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     : filter === "beginner" ? PRODUCTS.filter((p) => p.id === "lite")
     : filter === "flagship" ? PRODUCTS.filter((p) => p.id === "experience")
     : PRODUCTS.filter((p) => p.id === "pro");
@@ -881,7 +1073,10 @@ export default function ProductsPage() {
 
   const FILTERS = [
     { id: "all", label: "All Kits" },
+<<<<<<< HEAD
     { id: "essential", label: "Essential" },
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
     { id: "beginner", label: "Beginner" },
     { id: "flagship", label: "Flagship" },
     { id: "advanced", label: "Advanced" },
@@ -900,12 +1095,19 @@ export default function ProductsPage() {
       <style>{pageStyles}</style>
 
       <div className="ph-hero">
+<<<<<<< HEAD
         <DottedSurface className="product-dotted-surface" />
+=======
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
         <div className="badge" style={{ marginBottom: "1.8rem" }}>
           ARC Labs Hardware · Made in India
         </div>
         <h1>IoT &amp; Robotics Development Kits<br /><em>for STEM Education</em></h1>
+<<<<<<< HEAD
         <p>Four development boards. Every major microcontroller. Designed in Hyderabad for Indian classrooms and labs.</p>
+=======
+        <p>Three development boards. Every major microcontroller. Designed in Hyderabad for Indian classrooms and labs.</p>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
       </div>
 
       <div className="filter-bar">
@@ -933,6 +1135,7 @@ export default function ProductsPage() {
         <p className="section-desc" style={{ marginBottom: "2.5rem" }}>Compare all three kits across controllers, sensors, connectivity, and price.</p>
         <div style={{ overflowX: "auto" }}>
           <table className="fct">
+<<<<<<< HEAD
 <thead>
   <tr>
     <th style={{ minWidth: "210px" }}>Feature</th>
@@ -1028,6 +1231,30 @@ export default function ProductsPage() {
     );
   })}
 </tbody>
+=======
+            <thead>
+              <tr>
+                <th style={{ minWidth: "210px" }}>Feature</th>
+                <th className="th-lite">IoT Lite Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>₹15,000</span></th>
+                <th className="th-kit">IoT Experience Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>₹20,000</span></th>
+                <th className="th-pro">IoT Pro Kit<br /><span style={{ fontSize: ".65rem", fontWeight: 400, color: "var(--text-3)" }}>₹25,000</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              {COMPARE_ROWS.map((row, i) => {
+                if (row.cat) return <tr className="fct-cat" key={i}><td colSpan={4}>{row.label}</td></tr>;
+                const cell = (v) => v === "✓" ? <span className="fct-yes">{v}</span> : v === "—" ? <span className="fct-no">{v}</span> : <span className="fct-val">{v}</span>;
+                return (
+                  <tr key={i} className={row.priceRow ? "price-row-fct" : ""}>
+                    <td>{row.label}</td>
+                    <td>{cell(row.lite)}</td>
+                    <td>{cell(row.exp)}{row.label === "Best For" && <span className="fct-best" style={{ marginLeft: 6 }}>BEST</span>}</td>
+                    <td>{cell(row.pro)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+>>>>>>> b8dfff3b603393a10fbbefad35e20ce310f665f2
           </table>
         </div>
       </div>
